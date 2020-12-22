@@ -1,16 +1,9 @@
-#!/usr/bin/env python
-# coding: utf-8
 
-# In[7]:
-
-
-# 1. Create input (they don't specify whether "int" or "float" so we'll stick to "int")
-
+# 1. Create input (they don't specify whether "int" or "float" so we'll stick with "int")
 age = int(input())
 
 
 # 2. Create conditions
-
 if age <= 14:
     drink_type = "toddy"
 elif 14 < age <= 18:
@@ -20,10 +13,10 @@ elif 18 < age <= 21:
 else:
     drink_type = "whisky"
 
+# 3. Print result    
 print(f"drink {drink_type}")
 
 
-# In[ ]:
 
 
 
