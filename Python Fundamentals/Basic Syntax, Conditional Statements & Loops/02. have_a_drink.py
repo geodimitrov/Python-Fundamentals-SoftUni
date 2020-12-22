@@ -16,8 +16,3 @@ else:
 # 3. Print result    
 print(f"drink {drink_type}")
 
-
-
-
-
-
