@@ -1,6 +1,5 @@
 
 # 1. Introduce input variable (should be an integer)
-
 number = int(input())
 
 # 2. Create for loop
