@@ -15,7 +15,3 @@ elif oscar_num < 88:
 elif oscar_num > 88:
     print ("Leo got one already!")
 
-
-
-
-
