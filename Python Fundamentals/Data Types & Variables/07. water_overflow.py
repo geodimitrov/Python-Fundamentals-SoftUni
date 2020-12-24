@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[11]:
-
 
 n = int(input())
 capacity = 255
@@ -17,10 +12,4 @@ for i in range (n):
         capacity -= water
         
 print (filled_capacity)
-
-
-# In[ ]:
-
-
-
 
