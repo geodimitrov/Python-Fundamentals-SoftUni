@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[6]:
-
 
 # 1. Introduce the numbers
 
@@ -16,10 +11,4 @@ result = (int((num_1 + num_2) / num_3))  * num_4
 
 # 3. Print result
 print (result)
-
-
-# In[ ]:
-
-
-
 
