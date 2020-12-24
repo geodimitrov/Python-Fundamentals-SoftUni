@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
 
 # Solution 1
 
@@ -14,8 +9,6 @@ result = char_1 + char_2 + char_3
 print (result)
 
 
-# In[1]:
-
 
 # Solution 2
 
@@ -26,10 +19,4 @@ for _ in range(3):
     result += char
     
 print(result)
-
-
-# In[ ]:
-
-
-
 
