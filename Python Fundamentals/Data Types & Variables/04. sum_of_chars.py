@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[4]:
-
 
 n = int(input())
 total_sum = 0
@@ -14,16 +9,4 @@ for _ in range (n):
     total_sum += ord(char)
     
 print (f"The sum equals: {total_sum}")
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
 
