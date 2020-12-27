@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[2]:
-
 
 N = int(input())
 highest_snowball_value = 0
@@ -23,10 +18,4 @@ for i in range (0, N):
         highest_snowball_quality = snowball_quality
 
 print (f"{highest_snowball_snow} : {highest_snowball_time} = {highest_snowball_value} ({highest_snowball_quality})")
-
-
-# In[ ]:
-
-
-
 
