@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[6]:
-
 
 items = input().split("|")
 budget = float(input())
@@ -39,10 +34,4 @@ if budget >= 150:
     print("Hello, France!")
 else:
     print("Time to go.")
-
-
-# In[ ]:
-
-
-
 
