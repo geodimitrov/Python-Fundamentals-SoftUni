@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[2]:
-
 
 # 1. Introduce input variable
 string = input()
@@ -23,10 +18,4 @@ for element in list_string:
         new_list.append(num)
         
 print(new_list)
-
-
-# In[ ]:
-
-
-
 
