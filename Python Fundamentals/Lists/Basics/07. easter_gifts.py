@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[16]:
-
 
 gifts = input().split()
 
@@ -22,17 +17,19 @@ while not command == "No Money":
     elif "JustInCase" in command:
         gifts[-1] = gift
         
-    command = input()
+    command = input()​
+29
+# In[ ]:
+30
+​
+31
+​
+32
+
     
 #remove None from list
 
 gifts = [el for el in gifts if not el == None]
 
 print(" ".join(gifts))
-
-
-# In[ ]:
-
-
-
 
