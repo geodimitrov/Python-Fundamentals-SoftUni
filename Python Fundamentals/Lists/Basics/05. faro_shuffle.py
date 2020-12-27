@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[20]:
-
 
 cards = input().split()
 num_shuffles = int(input())
@@ -35,10 +30,4 @@ shuffled_cards.append(BOTTOM_CARD)
 shuffled_cards.insert(0, TOP_CARD)
 
 print (shuffled_cards)
-
-
-# In[ ]:
-
-
-
 
