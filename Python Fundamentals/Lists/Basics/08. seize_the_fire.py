@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
 
 # create constants
 
@@ -39,10 +34,3 @@ for value in put_out_fire:
 
 print(f"Effort: {effort:.2f}")
 print (f"Total Fire: {sum(put_out_fire)}")
-
-
-# In[ ]:
-
-
-
-
