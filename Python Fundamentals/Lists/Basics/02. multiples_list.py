@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[5]:
-
 
 factor = int(input())
 count = int(input())
@@ -14,10 +9,4 @@ for i in range(1, count + 1):
     result.append(multiple)
 
 print(result)
-
-
-# In[ ]:
-
-
-
 
