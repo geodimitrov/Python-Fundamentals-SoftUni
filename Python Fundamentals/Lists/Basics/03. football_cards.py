@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[9]:
-
 
 # We can directly create a list of cards by using the split method
 list_cards = input().split()
@@ -26,10 +21,4 @@ if players_a < 7 or players_b < 7:
     print ("Game was terminated")
 else:
     print (f"Team A - {players_a}; Team B - {players_b}")
-
-
-# In[ ]:
-
-
-
 
