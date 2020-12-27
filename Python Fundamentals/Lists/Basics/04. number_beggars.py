@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[15]:
-
 
 # The 1st input line will be a str so use list comprehension to turn the data into nums
 list_nums = [int(el) for el in input().split(", ")]
@@ -17,10 +12,4 @@ for begger in range(n_beggers):
     list_sums.append(sum_begger)
     
 print(list_sums)
-
-
-# In[ ]:
-
-
-
 
