@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[3]:
-
 
 #introduce variables
 data = input().split("|")
@@ -49,10 +44,4 @@ if not bankrupt:
     print("Day completed!") 
     print(f"Coins: {coins}")
     print(f"Energy: {energy}")
-
-
-# In[ ]:
-
-
-
 
