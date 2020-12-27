@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[6]:
-
 
 N = int(input())  #lost fights
 
@@ -26,10 +21,4 @@ for i in range (1, N + 1):
                 expenses += armor_price
         
 print (f"Gladiator expenses: {expenses:.2f} aureus")
-
-
-# In[ ]:
-
-
-
 
