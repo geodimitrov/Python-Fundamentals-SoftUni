@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[7]:
-
 
 import math
 
@@ -28,10 +23,4 @@ for day in range (1, days + 1):
     
             
 print (f"{party_size} companions received {math.floor(coins_total / party_size)} coins each.")
-
-
-# In[ ]:
-
-
-
 
