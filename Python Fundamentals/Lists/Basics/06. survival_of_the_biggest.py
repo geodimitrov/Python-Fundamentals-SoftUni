@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[5]:
-
 
 numbers = input().split()
 n_remove = int(input())
@@ -15,10 +10,4 @@ for i in range (n_remove):
     numbers_int.remove(min(numbers_int))
     
 print(numbers_int)
-
-
-# In[ ]:
-
-
-
 
