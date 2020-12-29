@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[20]:
-
 
 def loading_bar(percentage):
     bars = 10 * "."
@@ -19,10 +14,4 @@ def loading_bar(percentage):
 
 percentage = int(input())
 loading_bar(percentage)
-
-
-# In[ ]:
-
-
-
 
