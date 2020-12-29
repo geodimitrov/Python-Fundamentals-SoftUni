@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[17]:
-
 
 def password_validator(password):
     is_valid = True
@@ -35,10 +30,4 @@ is_valid = password_validator(pass_input)
 
 if is_valid:
     print ("Password is valid")
-
-
-# In[ ]:
-
-
-
 
