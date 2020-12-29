@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[6]:
-
 
 # Define the broader func & inside of it define the other 2 funcs
 def add_and_subtract(num_1, num_2, num_3):
@@ -21,16 +16,4 @@ num_two = int(input())
 num_three = int(input())
 
 print(add_and_subtract(num_one, num_two, num_three))
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
 
