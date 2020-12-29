@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[2]:
-
 
 # Solution 1
 
@@ -20,9 +15,6 @@ def find_perf_number(number):
         
 number_input = int(input())
 find_perf_number(number_input)
-
-
-# In[6]:
 
 
 # Solution 2
@@ -45,10 +37,3 @@ if find_perf_number(number):
     print("We have a perfect number!")
 else:
     print("It's not so perfect.")
-
-
-# In[ ]:
-
-
-
-
