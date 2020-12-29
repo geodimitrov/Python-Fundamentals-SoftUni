@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[9]:
-
 
 # Import math module and use the factorial func
 import math
@@ -17,10 +12,4 @@ num_one = int(input())
 num_two = int(input())
 
 print(factorial_division(num_one, num_two))
-
-
-# In[ ]:
-
-
-
 
