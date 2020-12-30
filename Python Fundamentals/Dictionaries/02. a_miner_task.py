@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[5]:
-
 
 data = input()
 counter = 0
@@ -24,10 +19,4 @@ while not data == "stop":
 
 for key, value in resources.items():
     print(f"{key} -> {value}")
-
-
-# In[ ]:
-
-
-
 
