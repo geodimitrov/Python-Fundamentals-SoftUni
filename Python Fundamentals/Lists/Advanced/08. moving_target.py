@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[ ]:
-
 
 targets = [int(el) for el in input().split()]
 
@@ -39,4 +34,3 @@ while not command == "End":
 targets = [str(t) for t in targets]
 
 print("|".join(targets))
-
