@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[29]:
-
 
 data = input()
 
@@ -25,18 +20,4 @@ while not data == "buy":
 for key, value in products.items():
     total_price = value[0] * value[1]
     print(f"{key} -> {total_price:.2f}")
-
-
-# In[17]:
-
-
-test_dict = {'Beer': [2.20, 100]}
-test_dict["Beer"][1] += 1
-test_dict["Beer"][1]
-
-
-# In[ ]:
-
-
-
 
