@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[20]:
-
 
 current_version = [int(el) for el in input().split(".")]
 
@@ -17,10 +12,4 @@ for i in range(len(current_version) -1, -1, -1):
 new_version = ".".join([str(el) for el in current_version])
 
 print(new_version)
-
-
-# In[ ]:
-
-
-
 
