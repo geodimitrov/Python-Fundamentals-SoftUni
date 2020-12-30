@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[2]:
-
 
 n_electrons = int(input())
 
@@ -22,10 +17,4 @@ while n_electrons > 0:
     cell_position += 1
 
 print(distr_electrons)
-
-
-# In[ ]:
-
-
-
 
