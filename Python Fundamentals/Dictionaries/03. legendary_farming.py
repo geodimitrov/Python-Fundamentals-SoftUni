@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[22]:
-
-
 
 obtained = False
 key_materials = {"shards": 0, "fragments": 0, "motes": 0}
@@ -46,10 +40,3 @@ sorted_junk = sorted(junk.items(), key=lambda x: x[0])
 
 for junk, quantity in sorted_junk:
     print(f"{junk}: {quantity}")
-
-
-# In[ ]:
-
-
-
-
