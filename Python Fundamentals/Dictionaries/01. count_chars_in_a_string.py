@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[12]:
-
 
 text = input()
 
@@ -18,10 +13,4 @@ for char in text:
         
 for key, value in occurrences.items():
     print(f"{key} -> {value}")
-
-
-# In[ ]:
-
-
-
 
