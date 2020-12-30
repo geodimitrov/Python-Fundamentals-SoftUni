@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[10]:
-
 
 n_rooms = int(input())
 
@@ -28,10 +23,4 @@ if free_chairs >= 0:
 
 x = ["xxxx", 5]
 print(len(x[0]))
-
-
-# In[ ]:
-
-
-
 
