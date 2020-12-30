@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[17]:
-
 
 message = input().split()
 new_message = []
@@ -23,17 +18,4 @@ for el in message:
     new_message.append("".join(word))
 
 print(" ".join(new_message))
-
-
-# In[7]:
-
-
-char = chr("72")
-char
-
-
-# In[ ]:
-
-
-
 
