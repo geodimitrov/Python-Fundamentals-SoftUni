@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[6]:
-
 
 numbers = [int(n) for n in input().split(", ")]
 
@@ -18,10 +13,4 @@ while numbers:
         numbers.remove(num)
             
     print(f"Group of {boundary}'s: {current_group}")
-
-
-# In[ ]:
-
-
-
 
