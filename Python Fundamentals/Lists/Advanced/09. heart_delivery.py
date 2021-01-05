@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[15]:
-
 
 # Introduce data, split and run list comprehension to turn el into ints
 houses_data = [int(el) for el in input().split("@")]
@@ -35,10 +30,3 @@ if sum(houses_data) == 0:
 else:
     failed_houses = [el for el in houses_data if el > 0]
     print(f"Cupid has failed {len(failed_houses)} places.")
-
-
-# In[ ]:
-
-
-
-
