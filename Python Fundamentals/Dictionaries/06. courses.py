@@ -21,10 +21,3 @@ for course, students in sorted_courses.items():
     for name in sorted(students):
         print(f"-- {name}")
 
-
-# In[7]:
-
-
-random = ['John Anderson', 'Andrew Robinson', 'Clark Lewis']
-print(sorted(random))
-
