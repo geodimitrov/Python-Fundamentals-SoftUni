@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[19]:
-
 
 data = input()
 
@@ -39,10 +34,3 @@ for student, score in sorted(students_scores.items(), key= lambda x: (-x[1], x[0
 print("Submissions:")
 for language, count in sorted(language_submissions.items(), key=lambda x: (-x[1], x[0])):
     print(f"{language} - {count}")
-
-
-# In[ ]:
-
-
-
-
