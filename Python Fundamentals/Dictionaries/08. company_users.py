@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[10]:
-
 
 data = input()
 
@@ -27,10 +22,4 @@ for company, employee in sorted_companies:
     print(f"{company}")
     for n in employee:
         print(f"-- {n}")
-
-
-# In[ ]:
-
-
-
 
