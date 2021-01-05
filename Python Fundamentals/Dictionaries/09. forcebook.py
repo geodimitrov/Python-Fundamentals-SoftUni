@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[59]:
-
 
 data = input()
 
@@ -44,22 +39,3 @@ for side, users in forceusers.items():
         print(f"Side: {side}, Members: {len(users)}")
         for user in sorted(users):
             print(f"! {user}")
-
-
-# In[50]:
-
-
-e | b
-e | a
-f | d
-f | c
-f | e
-g | e
-Lumpawaroo
-
-
-# In[ ]:
-
-
-
-
