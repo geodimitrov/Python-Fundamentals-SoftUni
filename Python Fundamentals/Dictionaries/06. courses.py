@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[10]:
-
 
 #The only tricky part in this problem is the sorting
 data = input()
@@ -32,10 +27,4 @@ for course, students in sorted_courses.items():
 
 random = ['John Anderson', 'Andrew Robinson', 'Clark Lewis']
 print(sorted(random))
-
-
-# In[ ]:
-
-
-
 
