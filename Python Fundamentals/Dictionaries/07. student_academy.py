@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[10]:
-
 
 n = int(input())
 
@@ -24,16 +19,4 @@ for student, grades in students_grades.items():
 
 for name, grade in sorted(filtered_students.items(), key=lambda x: x[1], reverse=True):
     print(f"{name} -> {grade:.2f}")
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
 
