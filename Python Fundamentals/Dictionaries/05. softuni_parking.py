@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[8]:
-
 
 n = int(input())
 
@@ -32,10 +27,4 @@ for i in range(n):
             
 for user, plate in registrations.items():
     print(f"{user} => {plate}")
-
-
-# In[ ]:
-
-
-
 
