@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[4]:
-
 
 key = int(input())
 num_chrs = int(input())
@@ -14,10 +9,4 @@ for i in range (0, num_chrs):
     decrypted_msg += new_chr
     
 print (decrypted_msg)
-
-
-# In[ ]:
-
-
-
 
