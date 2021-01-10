@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[5]:
-
 
 n_lines = int(input())
 open_brackets = 0
@@ -24,10 +19,3 @@ for i in range(n_lines):
             print("UNBALANCED")
     elif open_brackets == 1 and close_brackets == 1:
             print ("BALANCED")
-
-
-# In[ ]:
-
-
-
-
