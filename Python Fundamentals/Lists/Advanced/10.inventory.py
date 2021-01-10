@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[8]:
-
 
 #receive input data and split to turn it into list
 items = input().split(", ")
@@ -39,10 +34,3 @@ while not command == "Craft!":
 
 # unpack the list and use ", " as a separator, print it
 print(*items, sep=", ")
-
-
-# In[ ]:
-
-
-
-
