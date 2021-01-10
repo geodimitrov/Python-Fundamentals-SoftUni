@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[3]:
-
 
 #Solution 1
 text = input()
@@ -16,7 +11,6 @@ for char in text:
 print(new_text)
 
 
-# In[5]:
 
 
 #Solution 2
@@ -26,10 +20,3 @@ text = input()
 for char in text:
     new_char = chr(ord(char) + 3)
     print(new_char, end="")
-
-
-# In[ ]:
-
-
-
-
