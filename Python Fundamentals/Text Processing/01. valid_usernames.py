@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[14]:
-
 
 usernames = input().split(", ")
 
@@ -20,10 +15,4 @@ for username in usernames:
             
     if valid:
         print(username)
-
-
-# In[ ]:
-
-
-
 
