@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[9]:
-
 
 # Solution 1
 
@@ -24,9 +19,6 @@ else:
 print(sum_chars)
 
 
-# In[14]:
-
-
 #Solution 2 (with a function)
 text_1, text_2 = input().split()
 
@@ -43,10 +35,4 @@ if len(text_1) > len(text_2):
     print(char_multiplier(text_1, text_2))
 else:
     print(char_multiplier(text_2, text_1))
-
-
-# In[ ]:
-
-
-
 
