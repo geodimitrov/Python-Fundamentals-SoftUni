@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[15]:
-
 
 tickets = input().split(", ")
 
@@ -42,10 +37,3 @@ for t in tickets:
             
     else:
         print("invalid ticket")
-
-
-# In[ ]:
-
-
-
-
