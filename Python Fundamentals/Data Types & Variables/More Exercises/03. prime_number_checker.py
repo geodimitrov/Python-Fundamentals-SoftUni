@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[11]:
-
 
 num = int(input())
 
@@ -13,10 +8,3 @@ for i in range(2, num):
     else:
         print ("True")
         break
-
-
-# In[ ]:
-
-
-
-
