@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[10]:
-
 
 #Solution 1
 # since it's not explicitly specified in description, we will not nitroduce a num but str
@@ -20,8 +15,6 @@ largest_number = int("".join(sorted_number))
 print(largest_number)
 
 
-# In[12]:
-
 
 # Solution 2
 # you can directly turn the var value into a list
@@ -31,10 +24,3 @@ number = [digit for digit in input()]
 sorted_number = sorted(number, reverse=True)
 
 print("".join(sorted_number))
-
-
-# In[ ]:
-
-
-
-
