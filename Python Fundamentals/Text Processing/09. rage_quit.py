@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[26]:
-
 
 data = input().upper()
 
@@ -26,10 +21,4 @@ for i in range(len(data)):
 
 print(f"Unique symbols used: {len(set(final_result))}")
 print(f"{final_result}")
-
-
-# In[ ]:
-
-
-
 
