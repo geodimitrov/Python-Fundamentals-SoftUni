@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[13]:
-
 
 text = input()
 cap_letters = []
@@ -13,10 +8,3 @@ for index in range(len(text)):
         cap_letters.append(index)
     
 print(cap_letters)
-
-
-# In[ ]:
-
-
-
-
