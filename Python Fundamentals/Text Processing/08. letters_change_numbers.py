@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[28]:
-
 
 data = input().split()
 total_sum = 0
@@ -43,10 +38,3 @@ for el in data:
     number = 0
     
 print(F"{total_sum:.2f}")
-
-
-# In[ ]:
-
-
-
-
