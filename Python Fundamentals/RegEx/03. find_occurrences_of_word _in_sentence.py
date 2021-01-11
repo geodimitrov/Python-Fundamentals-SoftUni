@@ -10,7 +10,6 @@ match = re.findall(rf"\b{word}\b", text)
 print(len(match))
 
 
-# In[1]:
 
 
 #Solution 2 (use IGNORECASE)
