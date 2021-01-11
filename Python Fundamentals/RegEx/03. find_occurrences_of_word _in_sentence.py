@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[24]:
-
 
 #Solution 1 (use lower() method to turn all letters lowercase before you use the regex)
 import re
@@ -27,10 +22,4 @@ word = input()
 match = re.findall(rf"\b{word}\b", text, re.IGNORECASE)
 
 print(len(match))
-
-
-# In[ ]:
-
-
-
 
