@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[5]:
-
 
 # always import the regex module
 
@@ -22,10 +17,4 @@ while text:
     text = input()
     
 print(*nums, sep=" ")
-
-
-# In[ ]:
-
-
-
 
