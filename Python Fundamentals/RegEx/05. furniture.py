@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[5]:
-
 
 import re
 
@@ -27,10 +22,4 @@ for el in furniture:
     print(el)
 
 print(f"Total money spend: {total_price:.2f}" )
-
-
-# In[ ]:
-
-
-
 
