@@ -1,3 +1,4 @@
+#create a func to fill in the set of elements
 def create_set_elements(count):
     list = []
     for _ in range(count):
@@ -5,6 +6,7 @@ def create_set_elements(count):
             list.append(el)
     return set(list)
 
+#create a func that prints the result
 def print_result(set):
     for el in set:
         print(el)
