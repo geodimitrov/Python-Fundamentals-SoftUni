@@ -13,11 +13,11 @@ def even_or_odd(sum_values, odd_nums, even_nums):
 
 def operations(odd_nums, even_nums):
     if sum(odd_nums) == sum(even_nums):
-        result = odd_nums.union(even_nums)
+        result = odd_nums.union(even_nums) #use the union() method or "|" operator find the union of the 2 sets
     elif sum(odd_nums) > sum(even_nums):
-        result = odd_nums - even_nums
+        result = odd_nums - even_nums # use the difference() method or "-" operator to find the difference between the 2 sets
     else:
-        result = odd_nums ^ even_nums
+        result = odd_nums ^ even_nums # use symmetric_difference() method oor "^" to find the symmetric diff between 2 sets
     return result
 
 lines = int(input())
@@ -35,4 +35,4 @@ for name in names:
     sum_char_values //= current_line
     even_or_odd(sum_char_values, odd_nums, even_nums)
 
-print(*operations(odd_nums, even_nums), sep=", ")
+print(*operations(odd_nums, even_nums), sep=", ") #unpack the sets and sep by ", "
