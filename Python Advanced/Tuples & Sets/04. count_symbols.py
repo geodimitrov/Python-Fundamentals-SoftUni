@@ -1,4 +1,5 @@
 #try to create as many func as possible to break down the code
+#create func to calculate symbol occurrences and add data to dict
 def symbol_occurrences(data):
     symbol_occur = {}
     for symbol in data:
@@ -8,6 +9,7 @@ def symbol_occurrences(data):
             symbol_occur[symbol] += 1
     return symbol_occur
 
+# create a func to print the result
 def print_result(symbol_occur):
     for symbol, occur in sorted(symbol_occur.items()):
         print (f"{symbol}: {occur} time/s")
