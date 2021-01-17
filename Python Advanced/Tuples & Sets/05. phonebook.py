@@ -1,3 +1,4 @@
+#use as many functions as posisble to break down the code
 def print_search_result(name, phonebook):
     if name in phonebook:
         print(f"{name} -> {phonebook[name]}")
