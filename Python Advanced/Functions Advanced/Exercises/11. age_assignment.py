@@ -10,4 +10,4 @@ def age_assignment(*args, **kwargs):
                 names_ages[name] = name_age_data[key]
     return names_ages
 
-print(age_assignment("Peter", "George", G=26, P=19))
+# print(age_assignment("Peter", "George", G=26, P=19))
