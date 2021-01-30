@@ -24,7 +24,6 @@ def divisible_by_25(m_value, f_value, males, females):
         result = True
     return result
 
-
 #create a func to print result
 def print_result(males, females):
     if not males:
