@@ -16,7 +16,6 @@ def reached_target(target, bombs_count):
             is_valid = False
     return is_valid
 
-
 effects = read_input()
 casings = read_input()
 BOMBS = {"Datura Bombs": 40, "Cherry Bombs": 60, "Smoke Decoy Bombs": 120}
