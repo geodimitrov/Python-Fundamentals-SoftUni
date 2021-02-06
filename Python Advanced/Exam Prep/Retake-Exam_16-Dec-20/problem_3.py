@@ -6,8 +6,9 @@ def get_magic_triangle(n):
 
         for i in range(len(magic_triangle[row]) - 1):
             sum_nums = magic_triangle[row][i] + magic_triangle[row][i + 1]
-            magic_triangle[row +1].append(sum_nums)
-        magic_triangle[row+1].append(1)
+            magic_triangle[row + 1].append(sum_nums)
+        
+        magic_triangle[row + 1].append(1)
 
     return magic_triangle
 
