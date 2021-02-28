@@ -1,4 +1,3 @@
-
 # 1. Create input (they don't specify whether "int" or "float" so we'll stick with "int")
 age = int(input())
 
@@ -15,4 +14,3 @@ else:
 
 # 3. Print result    
 print(f"drink {drink_type}")
-

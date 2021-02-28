@@ -1,4 +1,3 @@
-
 # 1. Introduce input variable
 oscar_num = int(input())
 
@@ -14,4 +13,3 @@ elif oscar_num < 88:
     
 elif oscar_num > 88:
     print ("Leo got one already!")
-
