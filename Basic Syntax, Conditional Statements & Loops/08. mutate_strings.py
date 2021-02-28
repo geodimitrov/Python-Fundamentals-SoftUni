@@ -1,5 +1,3 @@
-
-
 # Solution 1
 
 text_one = input()
@@ -21,4 +19,3 @@ for i in range(len(string_one)):
     if not string_one[i] == string_two[i]:
         new_string[i] = string_two[i]
         print("".join(new_string))
-

@@ -1,4 +1,3 @@
-
 # 1. Introduce variables
 quantity = int(input())
 days = int(input())

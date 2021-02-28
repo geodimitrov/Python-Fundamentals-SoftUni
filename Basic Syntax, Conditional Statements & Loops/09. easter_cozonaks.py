@@ -1,4 +1,3 @@
-
 # 1. Introduce variables
 budget = float(input())
 price_flour = float(input())
@@ -20,6 +19,3 @@ while budget >= price_cozonak:
     
 # 4. Print the results
 print (f"You made {cozonaks} cozonacs! Now you have {colored_eggs} eggs and {budget:.2f}BGN left.")
-
-
-

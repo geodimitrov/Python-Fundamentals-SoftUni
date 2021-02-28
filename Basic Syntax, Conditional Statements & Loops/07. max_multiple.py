@@ -1,4 +1,3 @@
-
 # 1. Introduce variables
 divisor = int(input())
 bound = int(input())

@@ -1,4 +1,3 @@
-
 # 1. Introduce input variable
 year = int(input())
 
