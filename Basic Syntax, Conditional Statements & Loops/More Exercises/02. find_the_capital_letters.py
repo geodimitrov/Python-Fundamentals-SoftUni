@@ -1,4 +1,3 @@
-
 text = input()
 cap_letters = []
 

@@ -1,6 +1,5 @@
-
 #Solution 1
-# since it's not explicitly specified in description, we will not nitroduce a num but str
+# since it's not explicitly specified in description, we will not introduce a num but str
 number = input()
 
 # turn the str into a list (use list comprehension)
