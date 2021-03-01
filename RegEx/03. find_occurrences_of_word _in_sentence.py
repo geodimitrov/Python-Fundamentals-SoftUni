@@ -1,4 +1,3 @@
-
 #Solution 1 (use lower() method to turn all letters lowercase before you use the regex)
 import re
 
@@ -10,8 +9,6 @@ match = re.findall(rf"\b{word}\b", text)
 print(len(match))
 
 
-
-
 #Solution 2 (use IGNORECASE)
 import re
 
@@ -21,4 +18,3 @@ word = input()
 match = re.findall(rf"\b{word}\b", text, re.IGNORECASE)
 
 print(len(match))
-

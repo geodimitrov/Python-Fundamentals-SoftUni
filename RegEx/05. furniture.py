@@ -1,4 +1,3 @@
-
 import re
 
 text = input()
@@ -22,4 +21,3 @@ for el in furniture:
     print(el)
 
 print(f"Total money spend: {total_price:.2f}" )
-
