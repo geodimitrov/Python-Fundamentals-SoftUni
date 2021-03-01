@@ -1,4 +1,3 @@
-
 # Solution 1 - the input is a str
 
 def odd_even_sum(number):
@@ -14,7 +13,6 @@ def odd_even_sum(number):
 
 num = input()
 odd_even_sum(num)
-
 
 
 #Solution 2 - the input is an int
