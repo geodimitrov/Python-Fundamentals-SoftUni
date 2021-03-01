@@ -1,6 +1,4 @@
-
 text = input()
-
 occurrences = {}
 
 for char in text:
@@ -13,4 +11,3 @@ for char in text:
         
 for key, value in occurrences.items():
     print(f"{key} -> {value}")
-

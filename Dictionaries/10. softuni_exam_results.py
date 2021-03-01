@@ -1,6 +1,4 @@
-
 data = input()
-
 language_submissions = {}
 students_scores = {}
 
@@ -20,8 +18,7 @@ while not data == "exam finished":
         if language not in language_submissions:
             language_submissions[language] = 0
         language_submissions[language] += 1
-        
-    
+
     data = input()
 
 for student, score in students_scores.items():

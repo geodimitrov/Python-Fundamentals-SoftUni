@@ -1,6 +1,4 @@
-
 n = int(input())
-
 registrations = {}
 
 for i in range(n):
@@ -27,4 +25,3 @@ for i in range(n):
             
 for user, plate in registrations.items():
     print(f"{user} => {plate}")
-

@@ -1,6 +1,4 @@
-
 data = input()
-
 companies = {}
 
 while not data == "End":
@@ -22,4 +20,3 @@ for company, employee in sorted_companies:
     print(f"{company}")
     for n in employee:
         print(f"-- {n}")
-

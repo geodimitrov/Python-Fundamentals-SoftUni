@@ -1,4 +1,3 @@
-
 #The only tricky part in this problem is the sorting
 data = input()
 
@@ -20,4 +19,3 @@ for course, students in sorted_courses.items():
     print(f"{course}: {len(students)}")
     for name in sorted(students):
         print(f"-- {name}")
-

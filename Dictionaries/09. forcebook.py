@@ -1,6 +1,4 @@
-
 data = input()
-
 forceusers = {}
 
 while not data == "Lumpawaroo":

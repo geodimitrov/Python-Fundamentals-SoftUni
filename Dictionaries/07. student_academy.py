@@ -1,6 +1,4 @@
-
 n = int(input())
-
 students_grades = {}
 
 for _ in range(n):
@@ -19,4 +17,3 @@ for student, grades in students_grades.items():
 
 for name, grade in sorted(filtered_students.items(), key=lambda x: x[1], reverse=True):
     print(f"{name} -> {grade:.2f}")
-

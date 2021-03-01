@@ -1,6 +1,4 @@
-
 data = input()
-
 products = {}
 
 while not data == "buy":
@@ -20,4 +18,3 @@ while not data == "buy":
 for key, value in products.items():
     total_price = value[0] * value[1]
     print(f"{key} -> {total_price:.2f}")
-

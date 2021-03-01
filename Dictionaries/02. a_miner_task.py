@@ -1,7 +1,5 @@
-
 data = input()
 counter = 0
-
 resources = {}
 
 while not data == "stop":
@@ -19,4 +17,3 @@ while not data == "stop":
 
 for key, value in resources.items():
     print(f"{key} -> {value}")
-
