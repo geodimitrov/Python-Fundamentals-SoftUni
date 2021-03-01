@@ -1,4 +1,3 @@
-
 data = input().split()
 total_sum = 0
 

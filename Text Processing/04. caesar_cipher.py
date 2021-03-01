@@ -1,4 +1,3 @@
-
 #Solution 1
 text = input()
 
@@ -11,10 +10,7 @@ for char in text:
 print(new_text)
 
 
-
-
 #Solution 2
-
 text = input()
 
 for char in text:

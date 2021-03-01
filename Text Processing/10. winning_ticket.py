@@ -1,7 +1,4 @@
-
 tickets = input().split(", ")
-
-
 winning_symbols = ['@', '#', '$', '^']
     
 def is_jackpot(ticket):

@@ -1,6 +1,4 @@
-
 usernames = input().split(", ")
-
 
 for username in usernames:
     valid = False
@@ -15,4 +13,3 @@ for username in usernames:
             
     if valid:
         print(username)
-

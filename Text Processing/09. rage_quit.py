@@ -1,6 +1,4 @@
-
 data = input().upper()
-
 text = ""
 final_result = ""
 
@@ -21,4 +19,3 @@ for i in range(len(data)):
 
 print(f"Unique symbols used: {len(set(final_result))}")
 print(f"{final_result}")
-
