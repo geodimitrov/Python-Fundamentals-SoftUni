@@ -1,4 +1,3 @@
-
 # Solution 1
 
 def find_perf_number(number):

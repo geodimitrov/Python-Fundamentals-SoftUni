@@ -1,4 +1,3 @@
-
 #Use simple logic: check if nums in reversed order match nums in original order
 
 def palindrome_check(numbers):
@@ -14,4 +13,3 @@ def palindrome_check(numbers):
         
 nums = input()
 palindrome_check(nums)
-

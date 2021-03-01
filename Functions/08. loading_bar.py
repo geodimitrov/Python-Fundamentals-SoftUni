@@ -1,4 +1,3 @@
-
 def loading_bar(percentage):
     bars = 10 * "."
     
@@ -14,4 +13,3 @@ def loading_bar(percentage):
 
 percentage = int(input())
 loading_bar(percentage)
-
