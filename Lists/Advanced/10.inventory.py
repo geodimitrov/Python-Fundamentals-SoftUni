@@ -1,7 +1,5 @@
-
 #receive input data and split to turn it into list
 items = input().split(", ")
-
 # start receiving commands until "Craft!"
 command = input()
 

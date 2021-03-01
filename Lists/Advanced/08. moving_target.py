@@ -1,4 +1,3 @@
-
 targets = [int(el) for el in input().split()]
 
 command = input()

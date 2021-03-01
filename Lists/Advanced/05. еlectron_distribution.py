@@ -1,4 +1,3 @@
-
 n_electrons = int(input())
 
 distr_electrons = []
@@ -17,4 +16,3 @@ while n_electrons > 0:
     cell_position += 1
 
 print(distr_electrons)
-

@@ -1,6 +1,4 @@
-
 numbers = [int(n) for n in input().split(", ")]
-
 boundary = 0
 
 while numbers:
@@ -13,4 +11,3 @@ while numbers:
         numbers.remove(num)
             
     print(f"Group of {boundary}'s: {current_group}")
-

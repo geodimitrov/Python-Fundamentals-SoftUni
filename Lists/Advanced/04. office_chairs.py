@@ -1,4 +1,3 @@
-
 n_rooms = int(input())
 
 room = 0
@@ -16,11 +15,3 @@ for i in range(n_rooms):
     
 if free_chairs >= 0:
     print(f"Game On, {free_chairs} free chairs left")
-
-
-# In[2]:
-
-
-x = ["xxxx", 5]
-print(len(x[0]))
-
