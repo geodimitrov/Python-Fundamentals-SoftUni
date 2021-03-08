@@ -12,6 +12,11 @@ def find_max_min_num(command_type, nums):
         return max(nums)
     return min(nums)
 
+def find_num_index(numbers, max_num):
+    for i in range(len(numbers) - 1, -1, -1):
+        if numbers[i] == max_num:
+            return i
+
 def execute_max_min_command(array, command_type, nums_type, odd):
     # find the odds/evens
     nums = find_nums(array, nums_type, odd)
@@ -19,9 +24,9 @@ def execute_max_min_command(array, command_type, nums_type, odd):
     if not nums:
         return print("No matches")
     # find the max/min num
-    num = find_max_min_num(command_type, nums)
-    # return the index of the num
-    return print(array.index(num))
+    max_num = find_max_min_num(command_type, nums)
+    num_index = find_num_index(array, max_num)
+    return print(num_index)
 
 def invalid_count(array, count):
     return count > len(array)
@@ -31,29 +36,24 @@ def count_bigger_than_nums(nums, count):
 
 def count_less_than_nums(nums, count, command_type):
     if command_type == "first":
-        return [nums[i] for i in range(count)]
-    reversed_nums = reversed(nums)
-    return [reversed_nums[i] for i in range(count)]
+        return nums[: count]
+    return nums[len(nums) - count:]
 
-
-def run_command(command_type, nums, count):
+def count_nums(command_type, nums, count):
     result = []
     if not nums:
         return print(result)
-
     if count_bigger_than_nums(nums, count):
         result = nums
     else:
         result = count_less_than_nums(nums, count, command_type)
-
     return print(result)
 
 def execute_count_command(array, command_type, count, nums_type, odd):
     if invalid_count(array, count):
         return print("Invalid count")
     nums = find_nums(array, nums_type, odd)
-    run_command(command_type, nums, count)
-
+    count_nums(command_type, nums, count)
 
 #read input and use comprehension to turn nums into ints
 array = [int(el) for el in input().split()]
