@@ -1,4 +1,3 @@
-
 def find_ascii_sum(char1, char2, chars):
     START = ord(char1)
     END = ord(char2)
