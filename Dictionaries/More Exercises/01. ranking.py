@@ -1,57 +1,104 @@
+def read_contests_info():
+    END = "end of contests"
+    result = {}
 
-def valid_contest_and_password(contests_data, contest, password):
-    if contest in contests_data:
-        return contests_data[contest] == password
+    while True:
+        input_line = input()
 
-def best_candidate(students_data):
+        if input_line == END:
+            break
+
+        contest_name, contest_password = input_line.split(":")
+        result[contest_name] = contest_password
+
+    return result
+
+def read_submissions_info():
+    END = "end of submissions"
+    result = []
+
+    while True:
+        input_line = input()
+
+        if input_line == END:
+            break
+
+        result.append(input_line)
+
+    return result
+
+def is_valid_contest(contests, contest, password):
+    if contest in contests:
+        return contests[contest] == password
+
+def update_contest_points(data, user, contest, new_points):
+    current_points = data[user][contest]
+
+    if current_points < new_points:
+        data[user][contest] = new_points
+
+def update_users_data(data, user, contest, points):
+    if user not in data:
+        data[user] = {}
+
+    if contest not in data[user]:
+        data[user][contest] = points
+    else:
+        update_contest_points(data, user, contest, points)
+
+def process_submissions(contests, submissions):
+    users_data = {}
+
+    for sub in submissions:
+        contest_name, contest_password, username, points = sub.split("=>")
+        points = int(points)
+
+        if is_valid_contest(contests, contest_name, contest_password):
+            update_users_data(users_data, username, contest_name, points)
+
+    return users_data
+
+def get_user_total_points(data):
+    total_points = 0
+
+    for value in data.values():
+        total_points += int(value)
+
+    return total_points
+
+def get_best_candidate_points(contests_results):
     best_score = 0
-    best_candidate = ""
-    for student, contests_score in students_data.items():
-        total_points = 0
-        for score in contests_score.values():
-            total_points += int(score)
-        if total_points > best_score:
-            best_score = total_points
-            best_candidate = student
-    return f"Best candidate is {best_candidate} with total {best_score} points."
+    best_candidate = None
 
-def print_result(students_data):
-    print ("Ranking:")
-    for student, contest_data in sorted(students_data.items()):
-        print(student)
-        sorted_contest_data = dict(sorted(contest_data.items(), key=lambda x: (x[1], x[0]), reverse=True))
-        for contest, score in sorted_contest_data.items():
-            print(f"#  {contest} -> {score}")
+    for user in contests_results:
+        user_data = contests_results[user]
+        user_total_points = get_user_total_points(user_data)
 
-contests_data = {}
-students_data = {}
+        if user_total_points > best_score:
+            best_score = user_total_points
+            best_candidate = user
 
-# read the input
-while True:
-    line = input()
-    if line == "end of contests":
-        break
-    contest_name, contest_password = line.split(":")
-    contests_data[contest_name] = contest_password
+    return best_candidate, best_score
 
-# read the submissions
-while True:
-    submission = input()
-    if submission == "end of submissions":
-        break
+def get_ordered_results_by_name_and_points(results):
+    ordered_results = dict(sorted(results.items()))
 
-    contest, password, username, points = submission.split("=>")
-    #check if contest and password are valid
-    if valid_contest_and_password(contests_data, contest, password):
-        if username not in students_data:
-            students_data[username] = {}
+    for user, user_data in ordered_results.items():
+        ordered_user_data = dict(sorted(user_data.items(), key=lambda x: x[1], reverse=True))
+        ordered_results[user] = ordered_user_data
 
-        if contest not in students_data[username]:
-            students_data[username][contest] = points
-            continue
+    return ordered_results
 
-        if points > students_data[username][contest]:
-            students_data[username][contest] = points
+def get_user_data(results, user):
+    return f"{user}\n" + "\n".join(f"#  {contest} -> {points}" for contest, points in results[user].items())
 
-print(best_candidate(students_data))
-print_result(students_data)
+def print_result(contests_results):
+    best_candidate, points = get_best_candidate_points(contests_results)
+    ordered_results = get_ordered_results_by_name_and_points(contests_results)
+    print(f"Best candidate is {best_candidate} with total {points} points.")
+    print("Ranking:\n" + "\n".join(get_user_data(ordered_results, user) for user in ordered_results))
+
+contests_info = read_contests_info()
+submissions_info = read_submissions_info()
+contests_results = process_submissions(contests_info, submissions_info)
+print_result(contests_results)
