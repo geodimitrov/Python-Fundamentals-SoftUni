@@ -1,28 +1,45 @@
+def sep_digits_from_non_digits(string):
+    nums = []
+    non_nums = []
 
-def get_digits_and_non_digits(message):
-    digits = []
-    non_digits = []
-    for char in message:
+    for char in string:
         if char.isdigit():
-            digits.append(char)
+            nums.append(char)
         else:
-            non_digits.append(char)
-    return digits, non_digits
+            non_nums.append(char)
 
-def get_take_and_skip_lists(digits):
-    takes = []
-    skips = []
-    for i in range(len(digits)):
+    return nums, "".join(non_nums)
+
+def split_nums(nums):
+    evens = []
+    odds = []
+
+    for i in range(len(nums)):
         if i % 2 == 0:
-            takes.append(digits[i])
+            evens.append(int(nums[i]))
         else:
-            skips.append(digits[i])
-    return takes, skips
+            odds.append(int(nums[i]))
 
+    return evens, odds
 
-message = "O{1ne1T2021wf312o13Th111xreve!!@!"
-digits, non_digits = get_digits_and_non_digits(message)
-take_list, skip_list = get_take_and_skip_lists(digits)
-print(non_digits)
+def decrypt_message(text, take_nums, skip_nums):
+    result = ""
+    curr_index = 0
 
-for i in range(len(non_digits))
+    for i in range(len(take_nums)):
+        take_num = take_nums[i]
+        skip_num = skip_nums[i]
+
+        result += text[curr_index:curr_index + take_num]
+        curr_index += skip_num + take_num
+
+    return result
+
+def print_result(result):
+    print(result)
+
+string = input()
+numbers, non_numbers = sep_digits_from_non_digits(string)
+take_list, skip_list = split_nums(numbers)
+result = decrypt_message(non_numbers, take_list, skip_list)
+print_result(result)
