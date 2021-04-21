@@ -6,24 +6,22 @@ class Hero:
         self.name = name
         self.hit_points = hit_points
         self.mana_points = mana_points
-
-    @property
-    def is_alive(self):
-        return self.hit_points > 0
+        self.is_alive = True
 
     def cast_spell(self, mp, spell):
-        if self.mana_points - mp <= 0:
+        if self.mana_points < mp:
             print(f"{self.name} does not have enough MP to cast {spell}!")
             return
         self.mana_points -= mp
         print(f"{self.name} has successfully cast {spell} and now has {self.mana_points} MP!")
 
     def take_damage(self, damage, attacker):
-        self.hit_points -= damage
-        if not self.is_alive:
+        if self.hit_points <= damage:
+            self.is_alive = False
             print(f"{self.name} has been killed by {attacker}!")
             return
 
+        self.hit_points -= damage
         print(f"{self.name} was hit for {damage} HP by {attacker} and now has {self.hit_points} HP left!")
 
     def recharge(self, mp_amount):
@@ -59,8 +57,7 @@ def read_commands():
 
     return result
 
-
-def execute_command(commands, heroes):
+def execute_command(command, heroes):
 
     if command.startswith("CastSpell"):
         hero_name, mp_needed, spell_name = command.split(" - ")[1:]
@@ -88,7 +85,7 @@ def execute_command(commands, heroes):
 def format_result(heroes):
     result = {f"{hero.name}": [hero.hit_points, hero.mana_points]
               for hero in heroes
-        }
+            }
 
     sorted_result = dict(sorted(result.items(), key=lambda x: (-x[1][0], x[0])))
     return sorted_result
@@ -100,7 +97,9 @@ def print_result(result):
 n = int(input())
 heroes = create_heroes(n)
 commands = read_commands()
+
 for command in commands:
     execute_command(command, heroes)
+
 formatted_result = format_result(heroes)
 print_result(formatted_result)
